@@ -9,6 +9,9 @@ booleaned into one watertight solid.
 
 Scale is **1/64" = 1'**, so a 12 in tile represents 768 × 768 ft.
 
+**New here? Read [`HANDOVER.md`](HANDOVER.md) first** — what the project is,
+what has been built, what was measured, and what is worth doing next.
+
 Two tiles have been built with this. Both are documented in
 [`docs/SITE_MODEL_TILE_TEST.md`](docs/SITE_MODEL_TILE_TEST.md), which is the
 record of what was measured and where the plan turned out to be wrong.
