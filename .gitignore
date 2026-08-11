@@ -1,0 +1,21 @@
+# derived data and the corpus -- see DATA.md
+data/
+
+# outputs
+out/
+*.stl
+*.ply
+*.glb
+*.obj
+*.3mf
+*.gcode
+
+# never
+.tripo_key
+*.key
+.env
+
+__pycache__/
+*.pyc
+.venv/
+tools/
