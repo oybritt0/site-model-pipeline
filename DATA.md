@@ -1,7 +1,13 @@
 # What data this needs
 
-The repository ships **no data**. This is what it expects, where it goes, and how
-much of the pipeline runs without each part.
+**The derived data is in this repository** (~230 MB), so a clone is runnable
+without any further setup, apart from one thing: the source images. This is what
+is here, what is not, and what that lets you run.
+
+> This repository is **private**. The assemblage images under
+> `data/gap_space/handover_assemblages/` are composites of third-party museum and
+> archive artwork. They must not be made public, and the repository must not be
+> flipped to public with them in its history.
 
 Everything resolves relative to a project root, found by walking up from the
 scripts until a directory containing `data/catalog/manifest.json` is found
@@ -35,8 +41,12 @@ scripts until a directory containing `data/catalog/manifest.json` is found
 | **derived total** | **~118 MB** | |
 | source images | **~4.0 GB** | cutting fragments (step 2) |
 
-`bootstrap_data.py` copies the derived 118 MB across from an existing checkout of
-the parent project. It does not copy images.
+All of that is already committed. `bootstrap_data.py` is what put it there, and
+can refresh it from a checkout of the parent project. It never copies images.
+
+Also committed: **one tile's assemblages**, 81 compositions with their alpha
+mattes, 112 MB, at `data/gap_space/handover_assemblages/`. That is what makes
+steps 3-5 runnable end to end without the corpus.
 
 ## The source images are not redistributable
 

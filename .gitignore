@@ -1,5 +1,13 @@
-# derived data and the corpus -- see DATA.md
-data/
+# The corpus itself is never committed: ~4 GB of third-party artwork.
+# The derived data IS committed so the repo is runnable -- see DATA.md.
+# This only holds while the repository is private.
+data/*
+!data/catalog/
+!data/embeddings/
+!data/dino_dense/
+!data/gap_space/
+data/gap_space/*
+!data/gap_space/handover_assemblages/
 
 # outputs
 out/

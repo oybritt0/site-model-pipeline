@@ -1,0 +1,14 @@
+# Binary. Without this, autocrlf can rewrite bytes inside .npy and .png on
+# checkout and the corruption is silent -- arrays load as garbage, not as errors.
+*.npy binary
+*.png binary
+*.jpg binary
+*.glb binary
+*.stl binary
+*.ply binary
+
+# Text, normalised
+*.py   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf

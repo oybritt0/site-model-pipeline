@@ -1,0 +1,76 @@
+{
+  "method": "drift",
+  "note": "the reference composition, fitted. Source positions, own axis, connected runs with stranded outliers.",
+  "protocol": "flux_vae",
+  "category": "all",
+  "point_mode": "mixed",
+  "point_index": 60,
+  "reserved": false,
+  "x": 7.74565962307145,
+  "y": 1.390634993614995,
+  "plan_x_in": 3.4501,
+  "plan_y_in": 11.9052,
+  "size_in": 0.9,
+  "size_ft": 57.6,
+  "steps_out": 14.968,
+  "diversity": 0.7965,
+  "clash": {
+    "a": "14_postmodernism",
+    "b": "10_deconstructivism",
+    "weight_a": 0.279,
+    "weight_b": 0.1637,
+    "axis_distance": 1.356,
+    "widest_axis": "legibility",
+    "score": 0.062
+  },
+  "periods": [
+    [
+      "14_postmodernism",
+      0.279
+    ],
+    [
+      "10_deconstructivism",
+      0.1637
+    ],
+    [
+      "12_parametric",
+      0.1546
+    ],
+    [
+      "01_prehistoric",
+      0.0892
+    ]
+  ],
+  "matte": "drift_matte.png",
+  "matte_coverage": 0.3212,
+  "contained": true,
+  "fit_scale": 0.6401,
+  "margin_frac": 0.055,
+  "edge": "hard",
+  "k": 10,
+  "emphasis": "even",
+  "n_forms": 10,
+  "scale": 1.3,
+  "jitter": 0.05,
+  "coherence": 0.0,
+  "spin": 0.0,
+  "position_from": "source",
+  "influence": 0.7,
+  "forms_available": 65,
+  "forms_placed": 10,
+  "out_size": 1080,
+  "work_res": 1024,
+  "seed": 60,
+  "sources": [
+    "01_prehistoric6dce0609cb",
+    "02_Classicalca54d966ee",
+    "06_neoclassicalcda37c9f1a",
+    "09_Brutalisme98f139e5b",
+    "10_deconstructivism271daf899c",
+    "12_parametric01a94302c6",
+    "12_parametricdf66917629",
+    "14_postmodernism9611b0665e",
+    "14_postmodernisme528a06836",
+    "14_postmodernisme61b3d64c7"
+  ]
+}

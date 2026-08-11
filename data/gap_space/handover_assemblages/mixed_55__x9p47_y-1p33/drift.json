@@ -1,0 +1,76 @@
+{
+  "method": "drift",
+  "note": "the reference composition, fitted. Source positions, own axis, connected runs with stranded outliers.",
+  "protocol": "flux_vae",
+  "category": "all",
+  "point_mode": "mixed",
+  "point_index": 55,
+  "reserved": false,
+  "x": 9.473923687482978,
+  "y": -1.3272389002017608,
+  "plan_x_in": 8.2177,
+  "plan_y_in": 4.4076,
+  "size_in": 1.2589,
+  "size_ft": 80.6,
+  "steps_out": 4.022,
+  "diversity": 0.7965,
+  "clash": {
+    "a": "04_renaissance",
+    "b": "05_baroque",
+    "weight_a": 0.2164,
+    "weight_b": 0.2004,
+    "axis_distance": 1.503,
+    "widest_axis": "legibility",
+    "score": 0.0652
+  },
+  "periods": [
+    [
+      "04_renaissance",
+      0.2164
+    ],
+    [
+      "05_baroque",
+      0.2004
+    ],
+    [
+      "08_futurism",
+      0.167
+    ],
+    [
+      "03_medieval",
+      0.1568
+    ]
+  ],
+  "matte": "drift_matte.png",
+  "matte_coverage": 0.3274,
+  "contained": true,
+  "fit_scale": 0.7708,
+  "margin_frac": 0.055,
+  "edge": "hard",
+  "k": 10,
+  "emphasis": "even",
+  "n_forms": 10,
+  "scale": 1.3,
+  "jitter": 0.05,
+  "coherence": 0.0,
+  "spin": 0.0,
+  "position_from": "source",
+  "influence": 0.7,
+  "forms_available": 77,
+  "forms_placed": 10,
+  "out_size": 1080,
+  "work_res": 1024,
+  "seed": 55,
+  "sources": [
+    "01_prehistoricb7d0b029cf",
+    "02_Classical53ad126e96",
+    "03_medieval17951c1125",
+    "03_medieval68338d8c9c",
+    "04_renaissance55547a5a12",
+    "04_renaissance97bc1211a0",
+    "05_baroque898f4bc9ea",
+    "05_baroqueb79d218fca",
+    "08_futurism9f36620538",
+    "15_mannerisme5113ae0ec"
+  ]
+}

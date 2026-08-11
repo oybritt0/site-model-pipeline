@@ -1,0 +1,157 @@
+{
+  "schema_version": 1,
+  "protocols": [
+    {
+      "id": "dinov2_base",
+      "display_name": "DINOv2 (non-verbal)",
+      "short_label": "DINOv2",
+      "features_file": "dinov2_base_features.npy",
+      "layout_file": "dinov2_base_umap_3d.npy",
+      "latent_2d_file": "latent_2d.json",
+      "enabled": true,
+      "sort_order": 10,
+      "pair_group": "self_supervised",
+      "card": {
+        "developer": "Meta AI (FAIR), 2023. Oquab et al.",
+        "corpus": "LVD-142M images, retrieval-curated from a larger uncurated pool. No captions, no labels, no authorship metadata.",
+        "method": "Self-distillation. A student sees local crops and matches a teacher that sees the global view, under heavy augmentation. A property that survives augmentation is a property the model learns.",
+        "privileges": "Whole-image gestalt. Figure against ground, silhouette, part arrangement, mid-scale texture, compositional geometry. It can establish that two things are the same kind of shape without any capacity to say what either one is.",
+        "excludes": "Language entirely. No concept of period name, author, date, or cultural meaning. Color is suppressed by construction. Fine detail below patch resolution is discarded.",
+        "commitment": "Its corpus is overwhelmingly photographic, so photographic naturalism functions as its definition of what an image is. A line drawing or construction document is processed as a sparse photograph rather than as its own object type."
+      }
+    },
+    {
+      "id": "dinov3_vitl16",
+      "display_name": "DINOv3 (non-verbal, later)",
+      "short_label": "DINOv3",
+      "features_file": "dinov3_vitl16_features.npy",
+      "layout_file": "dinov3_vitl16_umap_3d.npy",
+      "latent_2d_file": "dinov3_vitl16_latent_2d.json",
+      "enabled": false,
+      "sort_order": 15,
+      "pair_group": "self_supervised",
+      "card": {
+        "developer": "Meta AI, August 2025. Simeoni et al.",
+        "corpus": "LVD-1689M, 1,689 million images curated from a pool of roughly 17 billion, about twelve times DINOv2's LVD-142M.",
+        "method": "Same self-distillation lineage as DINOv2 with an added loss that regularizes how far the student drifts from the teacher, to preserve dense feature quality at scale.",
+        "privileges": "The same family of properties as DINOv2, executed better. Cleaner spatial coherence.",
+        "excludes": "Everything DINOv2 excludes: language, names, cultural context. Also underperforms on OCR, which matters for construction documents and annotated drawings.",
+        "commitment": "Pairs against DINOv2 holding objective and lab constant, changing only the moment. The field shifts when nothing changed except the protocol getting better at its own objective."
+      }
+    },
+    {
+      "id": "clip_vitl14_laion2b",
+      "display_name": "CLIP (linguistic)",
+      "short_label": "CLIP L/14",
+      "features_file": "clip_vitl14_laion2b_features.npy",
+      "layout_file": "clip_vitl14_laion2b_umap_3d.npy",
+      "latent_2d_file": "latent_2d_clip.json",
+      "enabled": true,
+      "sort_order": 20,
+      "pair_group": "contrastive_language",
+      "card": {
+        "developer": "OpenAI 2021 (Radford et al.), reproduced by OpenCLIP. These weights are the LAION-2B reproduction (laion2b_s32b_b82k), not the OpenAI WIT-400M original.",
+        "corpus": "2B English-filtered image-caption pairs scraped from the web. Product listings, museum pages, encyclopedia entries, stock photography, news.",
+        "method": "Contrastive learning with softmax over a batch. Each image is matched to its own caption, truncated at 77 tokens, and pushed away from every other caption present.",
+        "privileges": "Whatever people wrote down. Named styles, periods, materials, and mediums. It separates painting from photograph from engraving because those words appear in captions.",
+        "excludes": "Spatial relations, counting, negation. More importantly, anything nobody described: a well-known but rarely captioned work collapses toward the generic center of its category. The English filter removes the majority of the web before training.",
+        "commitment": "The arrangement carries the linguistic categories the web uses to describe images, in English."
+      }
+    },
+    {
+      "id": "metaclip2_vith14",
+      "display_name": "MetaCLIP 2 (worldwide)",
+      "short_label": "MetaCLIP 2",
+      "features_file": "metaclip2_vith14_features.npy",
+      "layout_file": "metaclip2_vith14_umap_3d.npy",
+      "latent_2d_file": "metaclip2_vith14_latent_2d.json",
+      "enabled": true,
+      "sort_order": 25,
+      "pair_group": "contrastive_language",
+      "card": {
+        "developer": "Meta AI, July 2025. Chuang et al., arXiv 2507.22062. Via open_clip ViT-H/14-worldwide.",
+        "corpus": "Worldwide web image-text pairs across more than 300 languages, metadata built from Wikipedia and multilingual WordNet. Over half the pairs are non-English.",
+        "method": "CLIP-identical architecture by design, so the comparison holds the objective constant and changes the curation policy. A no-filter policy: pairs are not dropped for being non-English, and no pretrained black-box model scores and discards data. Curation code and metadata are released.",
+        "privileges": "Visual concepts that circulate in writing anywhere, in any of 300 languages, rather than only in English.",
+        "excludes": "Still the uncaptioned. But its exclusions are published, which is why it earns a card.",
+        "commitment": "Displacement between the CLIP field and this one is a measurement of a cultural policy rather than a formal property. Any period whose works circulate primarily through non-English scholarship should move."
+      }
+    },
+    {
+      "id": "siglip2_l16",
+      "display_name": "SigLIP 2 (the paradigm's eye)",
+      "short_label": "SigLIP 2",
+      "features_file": "siglip2_l16_features.npy",
+      "layout_file": "siglip2_l16_umap_3d.npy",
+      "latent_2d_file": "siglip2_l16_latent_2d.json",
+      "enabled": true,
+      "sort_order": 27,
+      "pair_group": "contrastive_language",
+      "card": {
+        "developer": "Google DeepMind, February 2025. Tschannen et al., arXiv 2502.14786. Via open_clip ViT-L/16-SigLIP2-384.",
+        "corpus": "WebLI, roughly 90 percent English, with explicit de-biasing measures.",
+        "method": "The most compound recipe in the set. A pairwise sigmoid loss replaces CLIP's softmax; decoder-based pretraining predicts captions and region captions, making the encoder location-aware; self-distillation with a global-local loss; and a masked prediction loss. Online data curation throughout.",
+        "privileges": "Image-text alignment strong enough that it became the standard vision tower inside contemporary vision-language models, including PaliGemma, Idefics2, Cambrian-1, NVILA, and Qwen3-VL. When a multimodal model looks at an image today, this is usually the thing doing the looking.",
+        "excludes": "Non-English at 90 percent English data. Spatially its features are noisier and more fragmented than DINOv3's, consistent with a global contrastive objective.",
+        "commitment": "The paradigm's default eye. It completes a three-way on language policy at roughly 90, 100, and under 50 percent English alongside CLIP and MetaCLIP 2."
+      }
+    },
+    {
+      "id": "verbal",
+      "display_name": "Verbal attributes (medium cancelled)",
+      "short_label": "Verbal",
+      "features_file": "verbal_profile.npy",
+      "layout_file": "verbal_umap_3d.npy",
+      "latent_2d_file": "latent_2d_verbal.json",
+      "enabled": true,
+      "sort_order": 30,
+      "pair_group": "authored",
+      "card": {
+        "developer": "Yours.",
+        "corpus": "Your corpus only.",
+        "method": "Not a network. Position assigned by scoring each work against an authored list of descriptive terms. Every dimension was selected by a person.",
+        "privileges": "The terms in the list, and only those. Adjacency means two works answered the same authored question the same way.",
+        "excludes": "Every quality no axis names. Nuance below the resolution of the vocabulary flattens onto the nearest available term.",
+        "commitment": "The disclosed control. Once a viewer has seen a vocabulary that is written down and checkable, the absence of a published vocabulary behind the learned models becomes the point rather than a footnote."
+      }
+    },
+    {
+      "id": "sdxl_vae",
+      "display_name": "SDXL VAE (compression loss)",
+      "short_label": "SDXL VAE",
+      "features_file": "sdxl_vae_features.npy",
+      "layout_file": "sdxl_vae_umap_3d.npy",
+      "latent_2d_file": "sdxl_vae_latent_2d.json",
+      "enabled": true,
+      "sort_order": 40,
+      "pair_group": "compression",
+      "card": {
+        "developer": "Stability AI, 2023. VAE weights via madebyollin/sdxl-vae-fp16-fix.",
+        "corpus": "LAION-derived images.",
+        "method": "Convolutional variational autoencoder. Encode to a 4-channel latent at one eighth resolution, a 48x compression, then decode back. The KL constraint forces a trade between information capacity and detail.",
+        "privileges": "Low-frequency structure, large forms, dominant color fields. Whatever survives an aggressive spatial and channel bottleneck.",
+        "excludes": "High-frequency detail, and it excludes it before any generative model runs. Fine hatching, small lettering, dimension strings on construction documents, engraving line, canvas weave.",
+        "commitment": "This is the space contemporary generative images are actually made in, so what it discards is what the current image economy structurally cannot see. It is the only protocol here where the rabbit is a printable image rather than an analogy: the residual image per work is compression loss made visible. This layout is organized by what survives compression."
+      }
+    },
+    {
+      "id": "flux_vae",
+      "display_name": "FLUX VAE (compression loss, 12x)",
+      "short_label": "FLUX VAE",
+      "features_file": "flux_vae_features.npy",
+      "layout_file": "flux_vae_umap_3d.npy",
+      "latent_2d_file": "flux_vae_latent_2d.json",
+      "enabled": true,
+      "sort_order": 45,
+      "pair_group": "compression",
+      "card": {
+        "developer": "Black Forest Labs, 2024.",
+        "corpus": "Undisclosed.",
+        "method": "Convolutional variational autoencoder. Encodes to 16 latent channels at one eighth resolution, a 12x compression, four times less aggressive than SDXL's 48x.",
+        "privileges": "More than SDXL, at four times the channel cost. More high-frequency detail survives.",
+        "excludes": "Less than SDXL, but the same kind: the finest detail still goes.",
+        "commitment": "Completes the compression pair. Same subject, two compression ratios, two visible residuals, one exhibit that needs no explanation."
+      }
+    }
+  ]
+}

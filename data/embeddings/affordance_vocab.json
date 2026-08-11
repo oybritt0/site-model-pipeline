@@ -1,0 +1,428 @@
+{
+  "_comment": [
+    "Style read as codification: what each period's manner encodes of the",
+    "Style read as codification: what each period's manner encodes of the social,",
+    "cultural and political values that produced it, and what it therefore",
+    "AFFORDS -- who may enter, who may assemble, what movement is permitted.",
+    "",
+    "This file IS the interpretive apparatus, the same way verbal_vocab.json is the",
+    "projection apparatus. Every line is an arguable claim, authored rather than",
+    "measured. Edit freely; the prompt builder reads it at run time.",
+    "",
+    "  codifies/affords/withholds  the argument, used in the rationale",
+    "  space/move/light            the ROOM it makes -- these build the prompt,",
+    "                              so that the prompt describes an architecture",
+    "                              rather than listing style attributes",
+    "  plan/section/tokens         retained for the rationale"
+  ],
+  "periods": {
+    "01_prehistoric": {
+      "codifies": "collective labour and cosmological alignment before written authority",
+      "affords": "gathering without a centre, orientation to horizon and season, threshold marked by mass rather than enclosure",
+      "withholds": "interior, ownership, the named author",
+      "plan": "alignment and ring on an unbounded field",
+      "section": "mass resting on ground, weight declared, no floor",
+      "tokens": [
+        "megalithic alignment",
+        "unbounded field",
+        "mass without interior",
+        "horizon datum"
+      ],
+      "space": "a ring of standing masses on open ground",
+      "move": "gathered without a centre",
+      "light": "raking light off the horizon"
+    },
+    "02_Classical": {
+      "codifies": "civic order as proportional law, the citizen constituted as a measured subject",
+      "affords": "public assembly under a legible rule, hierarchy argued by proportion rather than force",
+      "withholds": "interiority, the private, the irregular",
+      "plan": "peristyle and stoa, colonnade defining a public edge",
+      "section": "column and entablature, load stated explicitly",
+      "tokens": [
+        "peristyle",
+        "colonnaded public edge",
+        "stated load",
+        "proportional order"
+      ],
+      "space": "a colonnaded hall open to a public edge",
+      "move": "entered frontally between columns",
+      "light": "even daylight through the peristyle"
+    },
+    "03_medieval": {
+      "codifies": "sacred hierarchy and guild craft knowledge, the body ascending",
+      "affords": "procession toward a withheld sanctum, refuge, enclosure, verticality as ascent",
+      "withholds": "the whole seen at once, the lay gaze into the sanctuary",
+      "plan": "nave and aisle, cloister, cellular accretion over time",
+      "section": "rib and vault, clerestory light entering high",
+      "tokens": [
+        "nave and aisle",
+        "cloistered enclosure",
+        "rib vault ascent",
+        "high clerestory light"
+      ],
+      "space": "a cloistered nave narrowing to a withheld sanctum",
+      "move": "processing deeper past screens",
+      "light": "high clerestory light falling into shadow"
+    },
+    "04_renaissance": {
+      "codifies": "humanist proportion and the recovery of antiquity as authority; perspective as a means of owning space",
+      "affords": "the single privileged viewpoint, the villa as retreat of a merchant class",
+      "withholds": "the accidental, the unmeasured, the collective viewpoint",
+      "plan": "centralized symmetry on harmonic ratios",
+      "section": "dome and drum, ideal geometry made constructible",
+      "tokens": [
+        "centralized symmetry",
+        "harmonic ratio",
+        "dome on drum",
+        "single viewpoint"
+      ],
+      "space": "a centralized domed room on harmonic ratios",
+      "move": "held at one privileged station",
+      "light": "even light under the drum"
+    },
+    "05_baroque": {
+      "codifies": "absolutism and counter-reformation persuasion, theatre as an instrument of power",
+      "affords": "staged reveal, movement choreographed toward a focus, emotional subjection",
+      "withholds": "the plan's logic from the person walking it",
+      "plan": "oval geometry and undulating wall on a processional axis",
+      "section": "concealed light source, illusionistic ceiling, vertical drama",
+      "tokens": [
+        "oval procession",
+        "undulating wall",
+        "concealed light",
+        "staged reveal"
+      ],
+      "space": "an oval hall of undulating walls",
+      "move": "drawn along the axis toward a focus",
+      "light": "light from a concealed source"
+    },
+    "06_neoclassical": {
+      "codifies": "enlightenment reason and the state's claim on antiquity, empire dressed as republic",
+      "affords": "institutional authority legible at a glance, the civic monument as address",
+      "withholds": "ornament as pleasure, the vernacular, the improvised",
+      "plan": "strict axis, portico, rational grid",
+      "section": "stripped column, austere cornice, daylight admitted as reason",
+      "tokens": [
+        "strict axial portico",
+        "rational grid",
+        "austere cornice",
+        "civic monument"
+      ],
+      "space": "a porticoed civic hall on a strict axis",
+      "move": "approached frontally up a stair",
+      "light": "daylight admitted evenly as reason"
+    },
+    "07_modernism": {
+      "codifies": "universal rationality and mass production; the refusal of ornament as a moral position",
+      "affords": "free plan, standardized dwelling, sunlight and air prescribed as social good",
+      "withholds": "history, locality, the decorated surface",
+      "plan": "free plan on a structural grid, partition released from structure",
+      "section": "pilotis, ribbon window, slab and roof garden",
+      "tokens": [
+        "free plan",
+        "pilotis and slab",
+        "ribbon glazing",
+        "structural grid"
+      ],
+      "space": "a free plan of slabs lifted on pilotis",
+      "move": "moving uninterrupted between partitions",
+      "light": "continuous ribbon light"
+    },
+    "08_futurism": {
+      "codifies": "speed and machine violence, rupture with the past as a programme",
+      "affords": "movement as the organizing value, the city as circulation, obsolescence built in",
+      "withholds": "rest, permanence, the monument",
+      "plan": "dynamic diagonals, terraced circulation",
+      "section": "stacked movement, lift towers, oblique ascent",
+      "tokens": [
+        "terraced circulation",
+        "oblique ascent",
+        "lift towers",
+        "dynamic diagonal"
+      ],
+      "space": "terraced decks stacked around lift towers",
+      "move": "carried upward on oblique circulation",
+      "light": "light striping the terraces"
+    },
+    "09_Brutalism": {
+      "codifies": "postwar welfare-state conviction and material honesty held as ethics",
+      "affords": "monumental public provision, mass as permanence, the megastructure as social container",
+      "withholds": "the polite facade, the disguise of structure",
+      "plan": "cellular aggregation and deck access within a megastructure",
+      "section": "board-marked concrete, deep overhang, heavy cast shadow",
+      "tokens": [
+        "deck access megastructure",
+        "board-marked concrete",
+        "deep overhang",
+        "cellular aggregation"
+      ],
+      "space": "a megastructure of deck-access cells",
+      "move": "circulating along open galleries",
+      "light": "deep shadow under heavy overhangs"
+    },
+    "10_deconstructivism": {
+      "codifies": "refusal of stable hierarchy, institutional critique turned aesthetic",
+      "affords": "disorientation, no privileged viewpoint, programme without given order",
+      "withholds": "orientation, the horizon, the reliable floor",
+      "plan": "fractured and skewed geometries in collision",
+      "section": "tilted plane, unresolved intersection, void cut through",
+      "tokens": [
+        "fractured skewed plan",
+        "tilted plane",
+        "unresolved intersection",
+        "cut void"
+      ],
+      "space": "fractured planes colliding over a cut void",
+      "move": "disoriented, given no privileged station",
+      "light": "light through unresolved gaps"
+    },
+    "11_High Tech": {
+      "codifies": "structure and service exposed; flexibility as an ideology of capital",
+      "affords": "adaptable interior, legible infrastructure, the building as a machine to be maintained",
+      "withholds": "the fixed room, the settled programme",
+      "plan": "served and servant zoning across a clear span",
+      "section": "exposed truss, external service tower, suspended floor",
+      "tokens": [
+        "served and servant zoning",
+        "clear span truss",
+        "external service tower",
+        "suspended floor"
+      ],
+      "space": "a clear-span shed served by external towers",
+      "move": "moving between served and servant zones",
+      "light": "even light through a glazed envelope"
+    },
+    "12_parametric": {
+      "codifies": "optimization as authority, computation displacing the author",
+      "affords": "continuous variation without repetition, smooth control, the crowd modelled as flow",
+      "withholds": "the joint, the module, the discrete decision",
+      "plan": "continuous differentiated field, no repeated bay",
+      "section": "shell and gradient, seamless envelope",
+      "tokens": [
+        "continuous differentiated field",
+        "seamless shell",
+        "gradient envelope",
+        "modelled flow"
+      ],
+      "space": "a continuous differentiated field under a seamless shell",
+      "move": "flowing without a repeated bay",
+      "light": "gradient light across the shell"
+    },
+    "14_postmodernism": {
+      "codifies": "the return of the sign and of irony, historical quotation detached from belief",
+      "affords": "communicative facade, pluralism as consumer address, contradiction tolerated",
+      "withholds": "sincerity, the single reading",
+      "plan": "quoted fragment and collaged type",
+      "section": "applied pediment, layered facade, colour as speech",
+      "tokens": [
+        "quoted fragment",
+        "applied pediment",
+        "layered communicative facade",
+        "collaged type"
+      ],
+      "space": "a quoted facade fronting a collaged plan",
+      "move": "addressed by signs at the approach",
+      "light": "flat even light on applied colour"
+    },
+    "15_mannerism": {
+      "codifies": "deliberate rule-breaking by those who hold the rule, anxiety inside a mastered language",
+      "affords": "the knowing viewer, ambiguity as sophistication, discomfort staged as wit",
+      "withholds": "resolution, the comfortable interval",
+      "plan": "compressed and ambiguous, proportion strained",
+      "section": "broken pediment, interval stretched past ease",
+      "tokens": [
+        "strained proportion",
+        "broken pediment",
+        "compressed ambiguity",
+        "stretched interval"
+      ],
+      "space": "a compressed room of strained proportion",
+      "move": "checked by a broken interval",
+      "light": "uneasy light over a split pediment"
+    },
+    "16_industrial": {
+      "codifies": "production placed before representation, the shed as pure economy",
+      "affords": "span, throughput, labour organized by the plan",
+      "withholds": "the facade, the ceremonial entrance",
+      "plan": "repetitive bay across a long span",
+      "section": "truss and sawtooth roof, top-light over the floor",
+      "tokens": [
+        "repetitive long-span bay",
+        "sawtooth top-light",
+        "exposed truss",
+        "throughput floor"
+      ],
+      "space": "a long-span shed of repetitive bays",
+      "move": "moving with the throughput of the floor",
+      "light": "sawtooth top-light"
+    }
+  },
+  "fusion": {
+    "_comment": "How the second codification acts on the first, spatially. Chosen by cross-protocol agreement at the point.",
+    "settled": [
+      "resolved into",
+      "merged with",
+      "settling into"
+    ],
+    "mixed": [
+      "pressed against by",
+      "cut through by",
+      "overlaid with"
+    ],
+    "contested": [
+      "eroded by",
+      "torn open by",
+      "prised apart by"
+    ]
+  },
+  "drawing": {
+    "_comment": "The drawing convention, kept short so the space description has room.",
+    "base": "abstract architectural drawing, plan and section fused, orthographic hard line, hatched poche"
+  },
+  "axes": {
+    "_comment": [
+      "A rift is not two different periods -- adjacent periods differ constantly",
+      "and agree about nearly everything that matters. A rift is where two",
+      "codifications pull OPPOSITE ways on the same question about who",
+      "architecture is for. Positions are -1..+1 per axis, authored and arguable.",
+      "rift_atlas.py scores a neighbourhood by weighted polarisation along each",
+      "axis and selects the points where a single axis is most torn."
+    ],
+    "definitions": {
+      "authority": {
+        "neg": "authority centralised and staged",
+        "pos": "authority refused or distributed"
+      },
+      "legibility": {
+        "neg": "the order withheld from its occupant",
+        "pos": "the order legible at a glance"
+      },
+      "permanence": {
+        "neg": "built as monument, to outlast",
+        "pos": "built as flow, obsolescence accepted"
+      },
+      "labour": {
+        "neg": "the hand and the guild visible",
+        "pos": "the machine and the standard visible"
+      },
+      "address": {
+        "neg": "addressed to a public assembled",
+        "pos": "addressed to a subject alone"
+      }
+    },
+    "order": [
+      "authority",
+      "legibility",
+      "permanence",
+      "labour",
+      "address"
+    ],
+    "positions": {
+      "01_prehistoric": [
+        0.6,
+        -0.4,
+        -0.9,
+        -1.0,
+        -0.9
+      ],
+      "02_Classical": [
+        -0.3,
+        0.9,
+        -0.7,
+        -0.5,
+        -1.0
+      ],
+      "03_medieval": [
+        -0.7,
+        -0.9,
+        -0.8,
+        -1.0,
+        -0.2
+      ],
+      "04_renaissance": [
+        -0.6,
+        0.6,
+        -0.7,
+        -0.6,
+        0.7
+      ],
+      "05_baroque": [
+        -1.0,
+        -0.8,
+        -0.6,
+        -0.4,
+        0.4
+      ],
+      "06_neoclassical": [
+        -0.9,
+        1.0,
+        -0.9,
+        -0.2,
+        -0.6
+      ],
+      "07_modernism": [
+        0.2,
+        0.7,
+        -0.1,
+        0.9,
+        -0.3
+      ],
+      "08_futurism": [
+        0.4,
+        0.2,
+        1.0,
+        1.0,
+        -0.1
+      ],
+      "09_Brutalism": [
+        -0.2,
+        0.5,
+        -0.8,
+        0.6,
+        -0.8
+      ],
+      "10_deconstructivism": [
+        1.0,
+        -1.0,
+        0.3,
+        0.2,
+        0.6
+      ],
+      "11_High Tech": [
+        0.5,
+        0.8,
+        0.7,
+        1.0,
+        0.2
+      ],
+      "12_parametric": [
+        0.3,
+        -0.3,
+        0.6,
+        1.0,
+        0.5
+      ],
+      "14_postmodernism": [
+        0.7,
+        0.3,
+        0.2,
+        0.3,
+        0.8
+      ],
+      "15_mannerism": [
+        -0.5,
+        -0.6,
+        -0.5,
+        -0.8,
+        0.9
+      ],
+      "16_industrial": [
+        0.1,
+        0.9,
+        0.4,
+        1.0,
+        -0.4
+      ]
+    }
+  }
+}
